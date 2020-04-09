@@ -32,10 +32,13 @@ public class Main {
 
             dao.findById(1).ifPresent(System.out::println);
 
-            user = dao.findByUsername("johndoe1").get();
+            user = dao.findByUsername("johndoe1").orElse(null);
             dao.delete(user);
 
-            dao.list().stream().forEach(System.out::println); // should print nothing
+            FakeUserInserter fakeUserInserter = new FakeUserInserter(dao);
+            fakeUserInserter.insert(100);
+
+            dao.list().stream().forEach(System.out::println);
         }
     }
 }
