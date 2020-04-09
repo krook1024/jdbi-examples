@@ -14,6 +14,11 @@
             <organization>Faculty of Informatics, University of Debrecen</organization>
             <organizationUrl>https://www.inf.unideb.hu/</organizationUrl>
         </developer>
+        <developer>
+            <id>krook1024</id>
+            <name>Antal Molnár</name>
+            <email>krook1024@gmail.com</email>
+        </developer>
     </developers>
     <scm>
         <url>https://github.com/jeszy75/jdbi-examples</url>
